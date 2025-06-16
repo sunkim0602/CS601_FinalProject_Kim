@@ -14,7 +14,7 @@ const Photos = () => {
         <img src={`${import.meta.env.BASE_URL}images/IMG_006.jpg`} alt="Photo6" />
         <img src={`${import.meta.env.BASE_URL}images/IMG_007.JPG`} alt="Photo7" />
         <img src={`${import.meta.env.BASE_URL}images/IMG_008.jpg`} alt="Photo8" />
-        <img src={`${import.meta.env.BASE_URL}images/IMG_09.jpg`} alt="Photo9" />
+        <img src={`${import.meta.env.BASE_URL}images/IMG_009.jpg`} alt="Photo9" />
         <img src={`${import.meta.env.BASE_URL}images/IMG_010.jpg`}alt="Photo10" />
         <img src={`${import.meta.env.BASE_URL}images/IMG_011.jpg`} alt="Photo11" />
         <img src={`${import.meta.env.BASE_URL}images/IMG_012.jpg`} alt="Photo12" />
