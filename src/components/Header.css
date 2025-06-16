@@ -1,0 +1,136 @@
+.header-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 10px 20px;
+    background-color: rgb(155, 214, 235);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  flex-direction: column;
+}
+
+/*font text of the drop down content*/
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+/*highlight dropdown content when mouse is hovered*/
+.dropdown-content a:hover {
+    background-color: rgba(49, 49, 189, 0.1);
+    color: rgb(49, 49, 189);
+}
+
+/*hamburger menu*/
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.header-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 20px 20px;
+}
+
+/* Show dropdown content when you hover over the dropdown section */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When screen reduces in size, the drop hamburger menu will display */
+@media (max-width: 600px){
+    .menu-toggle{
+        display: block;
+    }
+    .header-section{
+        display: none;
+        flex-direction: column;
+        background-color: rgb(155, 214, 235);
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+    }
+
+
+}
+
+/* header section menu font */
+.header-section{
+    color: black;
+}
+
+.home-header{
+    flex-shrink: 2;
+}      
+
+
+
+.menu-item {
+    border-radius: 8px;
+    transition: background-color .3s ease, color .3s ease;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: rgba(49, 49, 189, 0.1);
+    color: rgb(49, 49, 189);
+}
+
+/*Use a pseudo class (::after) to change the color when one of the headers is clicked*/
+.home-dropdown,
+.projects-dropdown,
+.hobbies-dropdown,
+.resume-dropdown,
+.photo-dropdown,
+.contact-dropdown,
+.home-menu:active,
+.projects-menu:active,
+.hobbies-menu:active,
+.resume.menu:active,
+.photo-menu:active,
+.connect-menu:active {
+    color: orange;
+}
+
+/*Use attribute selector to change the font of each header*/
+section[class="container"] h2 {
+    color: rgb(169, 169, 64);
+    font-family: "Impact", sans-serif;
+}
+
+
+/*Use attribute selector to update the font of the company logo whenever it is used to ensure consistency.*/
+[data-title="SK Portfolio"] {
+  font-family: Verdana, sans-serif;
+}
+
+body {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+}

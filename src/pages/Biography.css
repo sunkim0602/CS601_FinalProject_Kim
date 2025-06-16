@@ -1,0 +1,27 @@
+.header-title {
+    text-align: center;
+}
+
+ .container-icon{
+    height: 300px;
+    width: auto;
+    margin: 10px
+ }
+
+ .bio-paragraph{
+    margin-bottom: 60px;
+ }
+
+ .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+    max-width: 750px
+ }
+
+ .content {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

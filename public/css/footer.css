@@ -1,0 +1,40 @@
+.footer{
+    grid-area: footer;
+    display: grid;
+}
+
+.footer {
+    color: #0c0a0a;
+    text-align: center;
+    margin-top: 120px;
+    position: relative;
+    bottom: 0;
+    background-color: rgb(155, 214, 235);
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    padding: 20px;
+    gap: 200px;
+    margin: 0 auto;
+}
+
+.policy-menu:hover,
+.contact-menu:hover,
+.social-menu:hover
+{
+    position: relative;
+    cursor: pointer;
+    color: rgb(49, 49, 189);
+}
+
+
+.footer-section a:visited {
+    color: purple;
+}

@@ -1,0 +1,38 @@
+.drag-and-drop-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.drop-zone {
+  width: 80%;
+  padding: 40px;
+  border: 3px dashed;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  color: #333;
+  margin-top: 30px;
+}
+
+.drop-zone.drag-over {
+  border-color: #3b82f6;
+  background-color: #e0f2fe;
+}
+
+.file-preview-container {
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.file-box {
+  padding: 10px 15px;
+  background-color: #f0f9ff;
+  border: 1px solid #93c5fd;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #1e3a8a;
+}
