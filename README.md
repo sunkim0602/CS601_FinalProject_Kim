@@ -86,13 +86,14 @@ In your tsconfig.json, ensure the following settings are configured
 
 
 	⁃	Users will see the navigation bar at all times when visiting between the pages. The bar layout will also adjust based on the screen size as the user enlarge/reduce the size of the browser or visits the site through a different device (eg. Mobile, tablet). Once the size reaches a certain size minimum, the bar will turn into a hamburger menu for the user to access the bar and makes it more user friendly rather than squeezing everything in one view. 
-￼![1__#$!@%!#__Pasted Graphic 1](https://github.com/user-attachments/assets/225e4e8d-d8f7-411d-ba29-3f5a712d731b)
+![1__#$!@%!#__Pasted Graphic 1](https://github.com/user-attachments/assets/225e4e8d-d8f7-411d-ba29-3f5a712d731b)
 ![Pasted Graphic 2](https://github.com/user-attachments/assets/15f413f0-3bad-48eb-88e5-fd36560e3331)
 
 ￼
 
 	•	Images  - The css was updated in the photo gallery section to allow the photos by setting both height and width to ‘auto’ to adjust based on its original sizes. Because each photo differ in it’s width and height, configuring them to a set number would distort the images that does not match the original size. Additional effects were added to each of the images by giving it a transition where the images enlarge slightly when mouse is hovered over. This shows the user which image is selected and is in focus. 
-￼![Pasted Graphic 3](https://github.com/user-attachments/assets/0e95399a-4de1-434b-970e-6200d9b9eb8d)
+
+![Pasted Graphic 3](https://github.com/user-attachments/assets/0e95399a-4de1-434b-970e-6200d9b9eb8d)
 
 
 	•	Drag & Drop feature - When submitting a Contacts form, users also have the ability to share their work to send along with them form (resume, projects, etc.). The Drag & Drop feature (DragStart, DragOver, DragLeave, etc.) is used here to make it easy for users to simply drop the files into the appropriate section and enhance the usability of the form. Or they have the option to upload the file through the openFileDialog function and selecting the files manually. Once the file is uploaded, users can also remove the file from the upload through the drag feature by clicking on the item and dragging outside of the section. 
