@@ -1,25 +1,22 @@
 body {
+    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    font-family: Arial, sans-serif;
-}
-
-#formWrapper {
-    text-align: center;
-    background: white;
-    padding: 20px;
-    width: 100%;
-    max-width: 550px;
-    margin: 0 auto;
-}
-
-h1 {
-    text-align: center;
+    
 }
 
 form {
     display: flex;
     flex-direction: column;
+}
+
+#formWrapper {
+    text-align: center;
+    background: rgb(208, 211, 131, 0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
 }
 
 #row, #row1, #row2, #row3 {
@@ -34,7 +31,7 @@ form {
     font-family: 'Arial', sans-serif;  
     font-size: 13px;                  
     font-weight: 500;                  
-    color: #b5aeae;                  
+    color: #a39f9f;                  
     margin-bottom: 15px;               
 }
 
@@ -73,7 +70,7 @@ input, label, button {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    width: 80px;
+    width: 120px;
     gap: 0em;
 }
 
@@ -138,4 +135,8 @@ input, label, button {
   border: 1px solid #93c5fd;
   font-size: 14px;
   color: #1e3a8a;
+}
+
+h1{
+    color: orange;
 }

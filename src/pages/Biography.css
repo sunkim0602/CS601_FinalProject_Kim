@@ -18,10 +18,10 @@
     align-items: center;
     justify-content: start;
     margin-bottom: 20px;
-    max-width: 750px
+    max-width: 900px;
+    background-color: rgba(208, 211, 131, 0.2);
  }
 
- .content {
-  padding: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+ h1{
+   color: orange;
+ }

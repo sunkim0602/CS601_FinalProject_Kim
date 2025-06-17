@@ -4,16 +4,17 @@ import DragAndDrop from '../components/DragAndDrop';
 
 //manages form input values
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
+  const initialFormData = {
     firstName: '',
     lastName: '',
     email: '',
     phone: '',
     reasons: [],
     message: '',
-  });
+  };
 
   //useState for validation errors, character count, form submission, storing uploaded files. 
+  const [formData, setFormData] = useState(initialFormData);
   const [errors, setErrors] = useState({});
   const [charCount, setCharCount] = useState(0);
   const [submitted, setSubmitted] = useState(false);
@@ -106,14 +107,29 @@ const ContactForm = () => {
     }
   };
 
+  const resetForm = () => {
+    setFormData(initialFormData);
+    setErrors({});
+    setCharCount(0);
+    setFiles([]);
+    setSubmitted(false);
+  }
+
   return (
     <div id="formWrapper">
       <h1 id="title">Let's Connect!</h1>
       <p id="description">
         Contact me today if you have any questions or would like to just chat!
-      </p>
+      </p>  
 
-      {!submitted ? (
+      {submitted ? (
+        <div id="summaryMessage">
+          <p>Thank you! Your message has been sent.</p>
+          <button onClick={resetForm} id="backButton">
+            Back to Form
+          </button>
+        </div>
+      ) : (  
         <form id="contactForm" onSubmit={handleSubmit}>
         <div id="row">
           <label>First Name (required):</label>
@@ -202,7 +218,7 @@ const ContactForm = () => {
             {files.map((file, index) => (
               <div 
                 key={index}
-                className={fileItemClass}
+                className="file-item"
                 draggable
                 onDragStart={handleDragStart(index)}
                 onDragEnd={handleDragEnd}
@@ -215,13 +231,10 @@ const ContactForm = () => {
           </div>  
 
         <button type="submit" id="submitBtn">Submit</button>
-      </form>
-    ) : (      
-
-      <div id="summaryMessage">Thank you! Your message has been sent.</div>
-    )}
+      </form>  
+      )} 
     </div>
-    );
+  );
 };
 
 export default ContactForm;

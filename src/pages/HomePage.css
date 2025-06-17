@@ -87,3 +87,7 @@ a[href$=".com"] {
   display: inline-block;
   position: relative;
 }
+
+.intro-name{
+    color: orange;
+}

@@ -4,7 +4,7 @@ import './Header.css';
 
 const HeaderWidget = () => (
   <div className="header-row">
-    <h1 data-title="SK Portfolio">SK Portfolio</h1>
+    <div class="header-title" data-title="SK Portfolio">SK Portfolio</div>
     
     <div className="dropdown">
       <button className="menu-toggle" aria-label="Toggle Menu">☰</button>
