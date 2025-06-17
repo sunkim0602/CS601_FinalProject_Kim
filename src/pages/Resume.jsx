@@ -8,7 +8,7 @@ const Resume = () => {
       {/* Main Content */}
       <h1>My Resume</h1>
       <div className="resume-container">
-        <embed src="/public/downloads/resume.pdf" type="application/pdf" width="100%" height="600px" />
+        <embed src={`${import.meta.env.BASE_URL}downloads/resume.pdf`} type="application/pdf" width="100%" height="600px" />
       </div>
     </>
   );

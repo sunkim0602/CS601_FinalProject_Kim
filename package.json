@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "//https://sunkim0602.github.io/CS601_FinalProject_Kim/",
+  "homepage": "https://sunkim0602.github.io/CS601_FinalProject_Kim/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
